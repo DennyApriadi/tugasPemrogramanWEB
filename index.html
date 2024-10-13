@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pemrograman WEB</title>
+</head>
+<!-- colour body -->
+<body style="background : #610119;">
+
+    <center><img src="img/icon.png" width="80" height="80" alt="Logo HIMATIF"></center>
+
+    <h1 style="text-align: center; color: white;">Pendataan Staff HIMATIF</h1>
+
+    <form action="hasil.php" method="get" style="width: 50vw; margin-left: 25%; background-color: #1D3865;">
+        <fieldset style="color: white;">
+            <legend>Data Pengurus</legend>
+
+            <div style="margin-left: 30px; padding: 10px;">
+            <!-- input nama (type text) -->
+            <p>
+                <label>Nama :</label><br>
+                <input type="text" name="nama" placeholder="Nama Lengkap..."/><br>
+            </p>
+
+            <!-- input NPM (type number) -->
+            <p>
+                <label>NPM :</label><br>
+                <input type="number" name="npm" placeholder="npm"/><br>
+            </p>
+
+            <!-- input email (type email) -->
+            </p>
+            <label>Email :</label><br>
+            <input type="email" name="email" placeholder="Email..."/><br>
+            </p>
+
+            <!-- input jenisKelamin (type radio) -->
+            </p>
+                <label>Jenis Kelamin :</label>
+                <p><input type="radio" name="jk" value="Laki-laki" />Laki-laki</p>
+                <p><input type="radio" name="jk" value="Perempuan" />Perempuan</p>
+            </p>
+
+            <!-- input jabatan (type dropdown) -->
+             <p>
+                <label>Departemen :</label><br>
+                <select name="dp">
+                    <option value="TOPMAN">Top Management</option>
+                    <option value="POSDM">Pengambangan Organisasi dan SDM</option>
+                    <option value="PI">Penalaran Intelektual</option>
+                    <option value="MEDKRE">Media Kreatif</option>
+                    <option value="KWU">Kewirausahaan</option>
+                </select><br>
+             </p>
+            </div>
+            <!-- (type submit) --> 
+            <div style="margin-left: 40%;">
+             <input type="submit" value="SUBMIT" style="font-size: 1.2em; background-color: goldenrod; margin-right: 15px;"> 
+             <input type="reset" value="RESET" style="font-size: 1.2em; background-color: goldenrod;">           
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
